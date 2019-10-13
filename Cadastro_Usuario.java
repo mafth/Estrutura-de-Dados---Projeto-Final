@@ -26,21 +26,130 @@ public class Cadastro_Usuario extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        Txt_Nome = new javax.swing.JTextField();
+        Txt_Sobrenome = new javax.swing.JTextField();
+        Txt_Senha = new javax.swing.JTextField();
+        Txt_Funcional = new javax.swing.JTextField();
+        Btn_SalvarCadastro = new javax.swing.JButton();
+        Btn_LimparCadastro = new javax.swing.JButton();
+        Btn_Sair = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setText("Nome");
+
+        jLabel2.setText("Sobrenome");
+
+        jLabel3.setText("Senha");
+
+        jLabel4.setText("Funcional");
+
+        Txt_Nome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Txt_NomeActionPerformed(evt);
+            }
+        });
+
+        Txt_Sobrenome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Txt_SobrenomeActionPerformed(evt);
+            }
+        });
+
+        Txt_Senha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Txt_SenhaActionPerformed(evt);
+            }
+        });
+
+        Txt_Funcional.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Txt_FuncionalActionPerformed(evt);
+            }
+        });
+
+        Btn_SalvarCadastro.setText("Salvar");
+
+        Btn_LimparCadastro.setText("Limpar");
+
+        Btn_Sair.setText("Sair");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(Btn_SalvarCadastro)
+                        .addGap(18, 18, 18)
+                        .addComponent(Btn_LimparCadastro)
+                        .addGap(18, 18, 18)
+                        .addComponent(Btn_Sair))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel4))
+                        .addGap(45, 45, 45)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Txt_Funcional, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Txt_Senha, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Txt_Sobrenome, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Txt_Nome, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(63, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(Txt_Nome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(Txt_Sobrenome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(Txt_Senha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(Txt_Funcional, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Btn_SalvarCadastro)
+                    .addComponent(Btn_LimparCadastro)
+                    .addComponent(Btn_Sair))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void Txt_NomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Txt_NomeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Txt_NomeActionPerformed
+
+    private void Txt_SobrenomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Txt_SobrenomeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Txt_SobrenomeActionPerformed
+
+    private void Txt_SenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Txt_SenhaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Txt_SenhaActionPerformed
+
+    private void Txt_FuncionalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Txt_FuncionalActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Txt_FuncionalActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +187,16 @@ public class Cadastro_Usuario extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Btn_LimparCadastro;
+    private javax.swing.JButton Btn_Sair;
+    private javax.swing.JButton Btn_SalvarCadastro;
+    private javax.swing.JTextField Txt_Funcional;
+    private javax.swing.JTextField Txt_Nome;
+    private javax.swing.JTextField Txt_Senha;
+    private javax.swing.JTextField Txt_Sobrenome;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     // End of variables declaration//GEN-END:variables
 }
